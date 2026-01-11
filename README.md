@@ -7,4 +7,4 @@
 1.  **文献深度爬取 (Source Literature Extraction)**：
 2.  **增强的鲁棒性 (Enhanced Robustness)**：
 3.  **多模型云端驱动 (Hybrid API Support)**：
-4.  **细粒度分析维度**：
+4.  **细粒度分析维度 (Fine-grained Analysis Dimensions)**：
