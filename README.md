@@ -1,4 +1,4 @@
-# GeoCrawler
+# LungGeoCrawler
 本项目是一个专为肺癌单细胞研究（或扩展至其他生物医学领域）设计的元数据抓取与深度分析工具。它通过结合 NCBI Entrez API、静态网页爬虫以及大语言模型（LLM），能够自动化从 GEO 数据库中提取、处理并分析复杂的数据集信息。
 
 ## 🚀 核心优化功能
@@ -37,10 +37,10 @@
 
 ```bash
 # 创建环境
-conda create -n geo_crawler python=3.9 -y
+conda create -n lunggeocrawler python=3.9 -y
 
 # 激活环境
-conda activate geo_crawler
+conda activate lunggeocrawler
 ```
 
 ### 2. 下载相关包
@@ -57,7 +57,7 @@ pip install pandas biopython tqdm requests beautifulsoup4 python-dotenv openai t
 在使用脚本前，需要进行简单的配置：
 
 ### 1. 接入 NCBI 接口
-在脚本 `Crawler_beta_1.0.py` 的“配置区域”中修改邮箱。NCBI 要求提供邮箱以识别频繁请求者。
+在脚本 `LungGeoCrawler_beta_1.0.py` 的“配置区域”中修改邮箱。NCBI 要求提供邮箱以识别频繁请求者。
 
 ```python
 # NCBI 登陆邮箱
@@ -85,7 +85,7 @@ Entrez.email = "your_email@example.com"
 
 ## 📝 使用方法
 ```bash
-python Crawler_beta_1.0.py
+python LungGeoCrawler_beta_1.0.py
 ```
 *提示：脚本运行期间会实时显示进度条（tqdm），每处理 4 个样本会保存一次临时进度。*
 
